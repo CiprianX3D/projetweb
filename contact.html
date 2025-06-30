@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examen Web</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+
+    <header>
+        <div class="cours">Developpement Web</div>
+        <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <section class="conteneur_principal_1">
+        <div class="conteneur_principal_2">
+        <h3>Contactez-nous via ce formulaire: </h3>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+    <h2>Formulaire de contact</h2>
+    <form action="/submit" method="POST" class="contact-form">
+        <div class="form-group">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit" class="submit-btn">Envoyer</button>
+    </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+    <p>Suivez-nous :  Youtube,  Facebook,  X,  Instagram</p>
+    <p>Copyright© 2024-2025 Ciprien. Tous les droits sont réservés.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  color: white;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+
+/* --------Couleur de fond principale-------- */
+body {
+background: linear-gradient(to bottom, #333232, rgb(193, 119, 7));
+color: white;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+/* --------Header-------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.cours {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;  /* Espace entre les liens de navigation */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+
+/* --------Section Conteneur_principal-------- */
+.conteneur_principal_1 {
+  display: flex;
+  align-items: center;
+  padding: 100px 60px;
+  min-height: 80vh;  /* Grande hauteur pour occuper la page */
+}
+
+.conteneur_principal_2 {
+  max-width: 1200px;
+}
+
+.conteneur_principal_2 h1 {
+  font-size: 3rem;  /* Titre principal très visible */
+  margin-bottom: 20px;
+}
+
+.conteneur_principal_2 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+/* --------Bouton-------- */
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 30px;  /* Bouton arrondi */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;   /* Animation au survol */
+}
+
+.button:hover {
+  background-color: #0056b3;  /* Couleur au survol */
+}
+
+
+/* --------Footer-------- */
+.footer {
+  margin-top: auto;   /* Pousse le footer tout en bas si le contenu est court */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+/* --------Responsive-------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;  /* Menu empilé verticalement */
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;   /* Espace entre buttons de nav sur petit écran */
+  }
+
+  .conteneur_principal_1 {
+    padding: 60px 20px;  /* Moins de padding vertical et latéral */
+    text-align: center;   /* Centrer le texte sur mobile */
+    justify-content: center;
+  }
+
+  .conteneur_principal_2 {
+    max-width: 100%;   /* Pleine largeur sur petit écran */
+  }
+}

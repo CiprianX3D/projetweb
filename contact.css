@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  color: white;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+
+/* --------Couleur de fond principale-------- */
+body {
+background: linear-gradient(to bottom, #333232, rgb(193, 119, 7));
+color: white;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+/* --------Header-------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.cours {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+
+/* --------Section Conteneur_principal-------- */
+.conteneur_principal_1 {
+  display: flex;
+  align-items: center;
+  padding: 40px 60px;
+  min-height: 10vh;
+}
+
+.conteneur_principal_2 {
+  max-width: 1200px;
+}
+
+.conteneur_principal_2 h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+/* Styles pour la section contact */
+.contact-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+
+
+/* --------Footer-------- */
+.footer {
+  margin-top: auto;  
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+/* --------Responsive-------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .conteneur_principal_1 {
+    padding: 60px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .conteneur_principal_2 {
+    max-width: 100%;
+  }
+
+  .contact-section {
+    margin: 30px 20px;
+    padding: 15px;
+  }
+  
+  .form-group input {
+    padding: 8px;
+  }
+  
+  .submit-btn {
+    padding: 10px 15px;
+  }
+}
+
+
+
